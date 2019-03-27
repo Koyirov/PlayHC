@@ -14,19 +14,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" media="screen" href='@routes.Assets.versioned("stylesheets/main.css")'>
     <link rel="stylesheet" media="screen" href='@routes.Assets.versioned("stylesheets/prism.css")'>
-    <link rel="shortcut icon" type="image/png" href='@routes.Assets.versioned("images/favicon.png")'>
-    <script src='@routes.Assets.versioned("javascripts/hello.js")' type="text/javascript"></script>
+    <link rel="stylesheet" href="@routes.Assets.versioned("css/bootstrap.min.css")">
+    <link rel="stylesheet" href="@routes.Assets.versioned("js/bootstrap.min.css")">
+    <script src='@routes.Assets.versioned("javascripts/main.js")' type="text/javascript"></script>
     <script src='@routes.Assets.versioned("javascripts/prism.js")' type="text/javascript"></script>
 </head>
 
-<body>
-    <section id="top">
-        <div class="wrapper">
-            <img class="resize" src="assets/images/play_icon_reverse.svg" alt="logo" />
-            <h1>Play Hello World Web Tutorial</h1>
-        </div>
-    </section>
+<body id="body" >
+    <header id="header">
+        <nav class="head">
+            <div id="navdiv">
+                <div class="nav1div">
+                </div>
+                <div class="nav1div">
+                    <div id="nav21div"></div>
+                    <div id="nav22div">
+                        <div id="nav221div"></div>
+                        <div id="nav222div">
+                            <a id="HeartCouncil" class="navbar-brand" href="@routes.HomeController.index"><h4>HeartCouncil</h4></a>
+                        </div>
+                        <div id="nav223div"></div>
+                    </div>
+                    <div id="nav23div"></div>
+                </div>
+                <div class="nav1div">
+                    <div id="nav31div"></div>
+                    <div id="nav32div">
+                        <div id="nav321div"></div>
+                        <div id="nav322div">
+                            <form class="example" action="/action_page.php">
+                                <input id="SearchInput" type="text" placeholder="Search.." name="search">
+                            </form>
+                        </div>
+                        <div id="nav323div"></div>
+                    </div>
+                    <div id="nav33div"></div>
+                </div>
+                <div class="nav1div">
+                    <div id="nav41div"></div>
+                    <div id="nav42div"></div>
+                    <div id="nav43div">
+                        <div id="nav421div"></div>
+                        <div id="nav422div">
+                            <div class="MenuIcon"></div>
+                            <div class="MenuIcon"></div>
+                            <div class="MenuIcon"></div>
+                        </div>
+                        <div id="nav423div"></div>
+                    </div>
+                </div>
+                <div class="nav1div">
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
     @content
+
+
 </body>
 
 </html>
